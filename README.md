@@ -1,6 +1,6 @@
 # Event Subscriber Tracker 🚀
 
-This is the front-end of a project built with **Node.js**, with the back-end hosted in another GitHub repository. The system focuses on **registration and ranking by referral**, where users who sign up receive a unique link to share. Each new registration through this link earns points, allowing users to climb the ranking.
+This is the front-end build with **Next.js** of a project built with **Node.js**, with the back-end hosted in [server-back](https://github.com/GabrielOliveira23/event-subscriber-tracker-back). The system focuses on **registration and ranking by referral**, where users who sign up receive a unique link to share. Each new registration through this link earns points, allowing users to climb the ranking.
 
 ## 🛠️ Technologies Used
 
