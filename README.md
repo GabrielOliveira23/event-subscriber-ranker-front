@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Event Subscriber Tracker 🚀
 
-## Getting Started
+This is the front-end of a project built with **Node.js**, with the back-end hosted in another GitHub repository. The system focuses on **registration and ranking by referral**, where users who sign up receive a unique link to share. Each new registration through this link earns points, allowing users to climb the ranking.
 
-First, run the development server:
+## 🛠️ Technologies Used
 
-```bash
+- [Next.js](https://nextjs.org/) - React framework for server-side rendering and static site generation.
+- [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript that adds static typing.
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework for fast and responsive styling.
+- [Orval](https://orval.dev/) - Code generator for OpenAPI specifications, simplifying API integration.
+
+## 📦 Installation
+
+1. Clone the repository:
+
+    ```bash
+      git clone https://github.com/GabrielOliveira/event-subscriber-tracker-front.git
+    ```
+
+2. Navigate to the project folder:
+
+    ```sh
+      cd nome-do-projeto
+    ```
+
+3. Install dependencies:
+  
+   ```sh
+   npm install
+   # ou
+   yarn install
+   ```
+
+## 🔥 Como Rodar o Projeto
+
+To start the development server:
+
+```sh
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project will be running at: [localhost - 3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Folder Structure
 
-## Learn More
+```bash
+.
+├── public/             # static assets
+├── src/
+|   ├── app/            # Next.js Pages/Routes
+│   ├── components/     # Reusable components
+│   ├── assets/         # App icons
+├── tailwind.config.js  # Tailwind CSS configuration
+├── tsconfig.json       # TypeScript configuration
+└── next.config.js      # Next.js configuration
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Styling with Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Styles are applied using Tailwind utility classes. The `tailwind.config.js` file can be customized as needed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Example usage:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```tsx
+export default function Button() {
+  return (
+    <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+      Click here
+    </button>
+  );
+}
+```
